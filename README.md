@@ -1,6 +1,6 @@
 # workingcopy-test
-Test repo for **working copy** iOS app. works great.
+Test repo for the **Working Copy** iOS app [link](http://workingcopyapp.com/) It works great.
 
-## Now upload workflows for workflow app
+# Workflows for workflow app.
 
-Excellent iOS app. wflow files go into the **workflows** dir.
+Also pushing some workflows for the Excellent iOS app **Workflow** [link](https://workflow.is)  The ` .wflow ` files are in the **workflows** folder. By the way, the app has a community site [here](https://workflow.is/community)
