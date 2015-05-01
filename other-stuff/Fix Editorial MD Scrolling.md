@@ -1,6 +1,6 @@
 # GET NORMAL DESKTOP SCROLL FROM Editorial Markdown Exported as html with style.
 
-## Issue: Preview - Copy HTML - Document with Styling, amd Scrolling behavior.
+## Issue: Preview - Copy HTML - Document with Styling, and Scrolling behavior.
 
 Editorial IOS app (see)[http://omz-software.com/editorial/] has an excellent Markdown preview from which you can copy the **html with style** to the clipboard. Paste into a new file as html. IMHO, **This file does now scroll correctly in desktop browsers.** I have found that the following changes to said pasted html file can fix that.  
 
