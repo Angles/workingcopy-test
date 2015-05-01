@@ -1,23 +1,25 @@
-# GET NORMAL DESKTOP SCROLL FROM Editorial Markdown Exported as html with style.
+# GET NORMAL DESKTOP SCROLL Editorial's Markdown Exported as html with style.
 
-## Issue: Preview - Copy HTML - Document with Styling, and Scrolling behavior.
+## Issue: Preview - Copy HTML - Document with Styling. And Scrolling behavior in desktop browsers.
 
-Editorial IOS app (see)[http://omz-software.com/editorial/] has an excellent Markdown preview from which you can copy the **html with style** to the clipboard. Paste into a new file as html. IMHO, **This file does now scroll correctly in desktop browsers.** I have found that the following changes to said pasted html file can fix that.  
+The amazing **Editorial IOS app** (see)[http://omz-software.com/editorial/] has an excellent Markdown preview from which you can copy the html with styling to the clipboard. You can paste this HTML into a new file, BUT in my experience, **it will not scroll correctly in MY desktop browsers.**
 
-### FIX as of this date, it works for me, no guarantees for you ;)
+### FIX: as of this date, it works for me. (No guarantees for you ;)
 
-**IN THE HEAD, CSS BLOCK OF THE EXPORTED HTML DOC, COMMENT OUT THESE ITEMS**   
+IN THE HEAD, CSS BLOCK OF THE EXPORTED HTML DOC, COMMENT OUT THESE ITEMS:
+
+This change:   
+` //overflow: hidden; `
 
 
-* this change
-`  //overflow: hidden; `
+Look in ` #content-wrapper ` or anywhere else you find them, this change:   
+` //overflow-y: scroll; `   
+**AND**    
+` //overflow-x: hidden; `
 
-* look in ` #content-wrapper ` or anywhere else you find these, make it like:
-`  //overflow-y: scroll; `    
-`  //overflow-x: hidden; `    
-    
-* Also, in CSS ` pre ` or maybe elsewhere in CSS, do this
-`  //whites-space: nowrap; `    
+
+Also, in CSS ` pre ` or maybe elsewhere in CSS, this change:   
+` //whites-space: nowrap; `
 
 
 These should give expexted results on desktop browsers. No Guarantees.
