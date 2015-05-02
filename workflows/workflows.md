@@ -1,5 +1,12 @@
-# Upload some Workflow app wflow files.
+# Upload some Workflow app ` .wflow ` files.
 
-_they maybe considered binary_ 
+## Some ` match text ` Regular Expression examples.
 
-**We shall see!**
+Basic *match text* for a URL pattern:
+### ` (^http[s]?[:/]{3}) `
+
+---
+
+Match text for a ` .jpg ` URL pattern:
+### ` (^http[s]?[:/]{3}.*[.]jp[e]?g) `
+
