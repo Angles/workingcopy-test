@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Preview</title>
+    <title>Regex In Textastic sample</title>
     <style type="text/css">
     body {
       margin: 0;
@@ -188,7 +188,7 @@
       <div id="content">
         <h1 id="buregexintextastic">Example REGEX IN TEXTASTIC</h1>
 
-<p><em>ver. 150422_b - THIS FILE SHOULD SCROLL CORRECTLY IN DESKTOP BROWSERS. IT IS AN EXAMPLE OF THE MD EXPORT WITH STYLING SCROLLING FIX.</em> </p>
+<p><em>ver. 150526_b - THIS FILE SHOULD SCROLL CORRECTLY IN DESKTOP BROWSERS. IT IS AN EXAMPLE OF THE MD EXPORT WITH STYLING SCROLLING FIX.</em> </p>
 
 <hr />
 
@@ -214,17 +214,9 @@
 
 <hr />
 
-<h1 id="regexexamples-iusedinpast">REGEX EXAMPLES - I USED IN PAST</h1>
-
-<p><strong>Purpose: only to Remind myself of stuff. No Guarantees!! Regular Expressions can radically change your files.</strong> Great when it works as expected. <strong>Back up your stuff.</strong></p>
-
-<h2 id="noguarantees">No Guarantees!</h2>
-
-<hr />
-
 <h1 id="generalobservations-regexintextastic">General observations - regex in textastic</h1>
 
-<p><strong>Regex <code>[  ]  (  )  {  }</code> are NOT escaped!</strong> You are lucky. </p>
+<p><strong>Regex <code>[  ]  (  )</code> are NOT escaped!</strong> You are lucky. </p>
 
 <p><strong>For multi-line search use <code>[\s\S]*</code> for the wildcard.</strong></p>
 
@@ -607,8 +599,142 @@ to
 
 <hr />
 
+<h2 id="inworkflowapp:simplifytimestampintoasimplertext.">IN WORKFLOW APP: Simplify timestamp into a simpler text.</h2>
+
+<p>Clipboard will give name which <code>get name</code> will report text like a times stamp, sometimes a real extension is included, if so use that extension in the replace. Example starting text like <code>Clipboard Apr 16, 2015, 12.12 PM</code> or <code>Clipboard Apr 16, 2015, 1.08 PM</code> <strong>AND</strong> sometime with useful extension <code>Clipboard Apr 16, 2015, 2.00 PM.txt</code>. </p>
+
+<p>example find text like this:<br/>
+<strong><code>Clipboard Apr 16, 2015, 12.12 PM</code></strong><br/>
+<strong><code>Clipboard Apr 16, 2015, 1.08 PM</code></strong><br/>
+<strong>AND sometimes like **<br/>
+</strong><code>Clipboard Apr 16, 2015, 2.00 PM.txt</code>** </p>
+
+<p>SEARCH </p>
+
+<h2 id="clip..ddsapm..24"><code>(^Clip.*\.\d\d+\s[AP]M)([.].{2,4})?</code></h2>
+
+<p>REPLACE</p>
+
+<h2 id="clipboard2"><code>Clipboard$2</code></h2>
+
+<p>Example result text after replace action:<br/>
+<code>Clipboard</code><br/>
+<code>Clipboard.txt</code> </p>
+
+<hr />
+
+<h2 id="inworkflowapp.quickformatsize.">IN WORKFLOW APP. quick format size.</h2>
+
+<p>From an un-rounded, unformatted number then use replace text to format, can roughly format all numbers in a text box this way. </p>
+
+<p>Example, first via workflow do Raw image size: <code>1462321</code> , divide by 1000, then: </p>
+
+<p>example starting text:<br/>
+<strong><code>1462.321</code></strong> </p>
+
+<p>example ending text: why, u can format 5 unrounded numbers at one time like this<br/>
+<strong><code>1,462</code></strong> </p>
+
+<p>SEARCH </p>
+
+<h2 id="dd3.0-9."><code>(\d)(\d{3})(\.[0-9].*)</code></h2>
+
+<p>REPLACE</p>
+
+<h2 id=""><code>$1,$2</code></h2>
+
+<hr />
+
+<h3 id="workflowapp.basicurlpatternmatches.">Workflow app. Basic url pattern matches.</h3>
+
+<p>Basic <em>match text</em> for a URL pattern: </p>
+
+<h2 id="https:3"><code>(^http[s]?[:/]{3})</code></h2>
+
+<p>Match text for a <code>.jpg</code> URL pattern: </p>
+
+<h2 id="https:3..jpeg"><code>(^http[s]?[:/]{3}.*[.]jp[e]?g)</code></h2>
+
+<hr />
+
+<h2 id="workflowappaddline-breaksbetweenparagraphs.">Workflow app, add line-breaks between paragraphs.</h2>
+
+<p><strong>After end of a text paragraphs, just after punctuation as place to do it.</strong> </p>
+
+<p>SEARCH </p>
+
+<h2 id="wn"><code>(([?!.,&quot;:':\w)”])(\n)</code></h2>
+
+<p>REPLACE</p>
+
+<h2 id=""><code>$1$2$2$3</code></h2>
+
+<p>&#8212;</p>
+
+<h2 id="regexsubstitutebinworkflowapp">REGEX SUBSTITUTE B in workflow app</h2>
+
+<p>Displaying item SIZE as kilobytes in a workflow. Can take as many as 4 separate steps. Reduce it to 2 steps: </p>
+
+<p><strong>Here we use 2 steps.</strong></p>
+
+<p>1st: FORMAT raw size To 1 digit. </p>
+
+<p>2nd: use Replace Text:
+SEARCH</p>
+
+<h2 id="ddd.d"><code>(,\d\d\d\.\d)$</code></h2>
+
+<p>REPLACE </p>
+
+<h2 id="k"><code>k</code></h2>
+
+<p>Example start text:<br/>
+<strong>5,618,706.0</strong><br/>
+Desired finish text:<br/>
+<strong>5,618k</strong> </p>
+
+<p>This is <em>variant B</em>. Typically, item size is the only number you want divided by 1,000 prior to display, to show it in k. The two above steps replace of these four workflow steps:</p>
+
+<ul>
+<li>to divide by 1000</li>
+<li>and round to zero digits simply to chomp the decimals</li>
+<li>and format number</li>
+<li>and add a k</li>
+</ul>
+
+<p>It is not trivial to do this perfectly with one workflow regex, given an unknown number of digits AND wanting to place the letter k simultaneously. Here, Format step takes care of all commas, and ensuring a known trailing pattern which we replace with the letter k. </p>
+
+<hr />
+
+<h2 id="regexsubstituteainworkflowapp">REGEX SUBSTITUTE A in workflow app</h2>
+
+<p><strong>Strip last 3 digits off a series of digits.</strong>
+Use Replace Text (the replace is blank): </p>
+
+<p>SEARCH:</p>
+
+<h2 id="ddd"><code>(\d\d\d)$</code></h2>
+
+<p>REPLACE:</p>
+
+<p>Example start text:<br/>
+<strong>5618706</strong><br/>
+Desired end text:<br/>
+<strong>5618</strong> </p>
+
+<p>Saves one step as it substitutes for these two workflow steps:</p>
+
+<ul>
+<li>divide by 1000</li>
+<li>and round to zero digits to chomp the decimals.</li>
+</ul>
+
+<p>This is <em>variant A</em> perhaps useful regards format size of item as kilobytes in workflow using fewer steps.</p>
+
+<hr />
+
 <p>add better examples</p>
       </div>
     </div>
   </body>
-</html>
+<html>
