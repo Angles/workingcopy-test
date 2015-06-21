@@ -2,11 +2,11 @@
 	"uuid": "74C6D420-A016-4659-AF92-B5CCC1AE53BB",
 	"category": "HTML",
 	"templates": [
-			{
-				"name": "HTML5",
-				"fileExtension": "html",
-				"snippet": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>${1:untitled}<\/title>\n<\/head>\n\n<body>$0\n<\/body>\n<\/html>"
-			},
+		{
+			"name": "HTML5",
+			"fileExtension": "html",
+			"snippet": "<!DOCTYPE HTML>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>${1:untitled}<\/title>\n<style>\nbody\t{\nmargin: 2em;\nfont-size: 1.5em;\ncolor: #CCCCCC;\nbackground-color: #262B30;\n}\n<\/style>\n<\/head>\n\n<body>$0\n<\/body>\n<\/html>"
+		},
 		{
 			"name": "XHTML 1.1",
 			"fileExtension": "html",
