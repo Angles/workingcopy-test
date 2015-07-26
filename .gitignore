@@ -1,100 +1,26 @@
-# For projects using nanoc (http://nanoc.ws/)
-
-# Default location for output, needs to match output_dir's value found in config.yaml
-output/
-
-# Temporary file directory
-tmp/
-
-# Crash Log
-crash.log
-
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-
-
-# Packages #
-############
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-*.war
-*.ear
-
-
-# Logs and databases #
-######################
-*.log
-*.sql
-#*.sqlite
-
-
-# Sparkle distribution Private Key #
-######################
-dsa_priv.pem
-
-
-# OS generated files #
-######################
-.DS_Store?
-ehthumbs.db
-Icon?
-Thumbs.db
-*.DS_Store
-
-## MORE OSX
-# Thumbnail cache files
-._*
-# Files that might appear on external disks
-.Spotlight-V100
-.Trashes
-
-
 # Xcode
-*.pbxuser
-*.mode1v3
-*.mode2v3
-*.perspectivev3
-*.xcuserstate
-project.xcworkspace/
-xcuserdata/
-
-
-#Eclipse
-.classpath
-.project
-.settings
-
-
-# Generated files
-/web-app/WEB-INF
+#
 build/
-*.[oa]
-*.pyc
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
 
-
-# Other source repository archive directories (protects when importing)
-.hg
-.svn
-CVS
-
-
-# automatic backup files
-*~.nib
-*.swp
-*~
-*(Autosaved).rtfd/
-Backup[ ]of[ ]*.pages/
-Backup[ ]of[ ]*.key/
-Backup[ ]of[ ]*.numbers/
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+#
+#Pods/
