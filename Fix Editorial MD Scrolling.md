@@ -1,5 +1,14 @@
 # GET NORMAL DESKTOP SCROLL with an Editorial Markdown file Exported as `html with styling` .
 
+# UPDATE: new Editorial has changed some of this.
+   
+The new Editorial has changed how I export Markdown.    
+
+**However** these style changes can work for those rare occasions when an iOS exported HTML file does not scroll in a desktop browser.     
+*End of Update*
+
+---
+
 ## Issue: `Preview - Copy HTML - Document with Styling`, Looks cool, but Scrolling behavior in desktop browsers is messed up.
 
 The amazing **Editorial IOS app** [see](http://omz-software.com/editorial/) has an excellent Markdown preview from which you can copy the **html with styling** to the clipboard. You can paste this HTML into a new file, BUT in my experience, **it will not scroll correctly in MY desktop browsers.**
