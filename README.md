@@ -1,3 +1,6 @@
+# Update
+Working copy is awesome, test confirmed and finished. Now this test repo may be in sleepy time ;)
+
 # workingcopy-test - What is here
 Test repo for the **Working Copy** iOS app [link](http://workingcopyapp.com/) It works great.
 
