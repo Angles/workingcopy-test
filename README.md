@@ -1,5 +1,7 @@
 # Update
-Working Copy is awesome, test confirmed and finished. Now this test repo may be in sleepy time ;)
+Working Copy is awesome, **test confirmed and finished.** 
+
+Now this test repo IS in sleepy time **so WORKFLOW ARE SUPER OLD.**
 
 # workingcopy-test - What is here
 Test repo for the **Working Copy** iOS app [link](http://workingcopyapp.com/) It works great.
