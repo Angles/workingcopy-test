@@ -7,7 +7,7 @@ Now this test repo IS in sleepy time **so WORKFLOW ARE SUPER OLD.**
 
 # 2nd Update - wflow files obsoleted
 
-App _Workflow_ is long since renamed _Shortcuts_ and ` .wflow ` files are obeoleted!
+App _Workflow_ is long since renamed _Shortcuts_ and ` .wflow ` files are obsolete.
 
 Below here is old.
 
