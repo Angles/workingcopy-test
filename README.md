@@ -3,6 +3,12 @@ Working Copy is awesome, **test confirmed and finished.**
 
 Now this test repo IS in sleepy time **so WORKFLOW ARE SUPER OLD.**
 
+Update:
+
+* workflow renamed to **Shortcuts**
+* Shortcuts can **not import via Open In.**
+* so this old repo is not much use
+
 ---
 
 # 2nd Update - wflow files obsoleted
